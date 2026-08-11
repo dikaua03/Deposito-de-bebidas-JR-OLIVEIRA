@@ -126,7 +126,7 @@ function sendOrder(e){
  let total=0, lines=[];
  Object.entries(cart).forEach(([i,q])=>{total+=products[i][2]*q;lines.push(`${q}x ${products[i][0]} — ${money(products[i][2]*q)}`)});
  let msg=`*NOVO PEDIDO — DEPÓSITO JR OLIVEIRA*%0A%0A*Cliente:* ${encodeURIComponent(name)}%0A*Endereço:* ${encodeURIComponent(address)}%0A*Referência:* ${encodeURIComponent(ref||'Não informado')}%0A%0A*Itens:*%0A${lines.map(x=>encodeURIComponent(x)).join('%0A')}%0A%0A*Total dos produtos:* ${encodeURIComponent(money(total))}%0A*Taxa de entrega:* consultar%0A*Pagamento:* ${encodeURIComponent(payment)}%0A*Observação:* ${encodeURIComponent(note||'Nenhuma')}`;
- window.open(`https://wa.me/5571988829392?text=${msg}`,'_blank');
+ window.open(`https://wa.me/5571987714174?text=${msg}`,'_blank');
 }
 renderProducts();update();
 </script>
