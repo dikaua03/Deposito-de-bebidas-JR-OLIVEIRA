@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Depósito JR Oliveira</title>
 
 <style>
+
 :root{
   --bg:#f5f5f5;
   --card:#fff;
@@ -28,14 +30,15 @@ body{
 }
 
 /* CABEÇALHO */
+
 header{
   background:#111827;
-  color:#fff;
-  padding:16px 14px 18px;
+  color:white;
+  padding:14px;
   position:sticky;
   top:0;
   z-index:10;
-  box-shadow:0 2px 12px #0002;
+  box-shadow:0 2px 12px #0003;
 }
 
 .header{
@@ -48,48 +51,48 @@ header{
 }
 
 .logo-img{
-  width:64px;
-  height:64px;
+  width:58px;
+  height:58px;
   object-fit:cover;
-  border-radius:16px;
-  background:#fff;
+  border-radius:15px;
+  background:white;
   flex-shrink:0;
 }
 
 h1{
-  font-size:24px;
-  margin:0 0 5px;
+  font-size:22px;
+  margin:0 0 4px;
 }
 
 .subtitle{
   color:#d1d5db;
-  font-size:14px;
+  font-size:12px;
 }
 
 .cartbtn{
   border:0;
-  background:#fff;
+  background:white;
   color:#111827;
-  padding:12px 15px;
+  padding:11px 14px;
   border-radius:12px;
   font-weight:800;
   cursor:pointer;
-  white-space:nowrap;
 }
 
 /* CONTEÚDO */
+
 main{
   max-width:900px;
-  margin:0 auto;
+  margin:auto;
   padding:20px 14px 110px;
 }
 
 .notice{
-  background:#fff;
+  background:white;
   border:1px solid var(--border);
   padding:14px;
   border-radius:14px;
-  margin-bottom:18px;
+  margin-bottom:20px;
   font-size:13px;
   color:#4b5563;
 }
@@ -102,42 +105,58 @@ h2{
 .grid{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:12px;
+  gap:14px;
 }
 
+/* PRODUTO */
+
 .card{
-  background:var(--card);
+  background:white;
   border:1px solid var(--border);
-  border-radius:16px;
-  padding:14px;
+  border-radius:17px;
+  overflow:hidden;
   box-shadow:0 2px 8px #00000008;
+}
+
+.product-img{
+  width:100%;
+  height:190px;
+  object-fit:contain;
+  display:block;
+  background:#fafafa;
+  padding:12px;
+}
+
+.card-content{
+  padding:14px;
 }
 
 .badge{
   display:inline-block;
-  font-size:11px;
-  font-weight:800;
+  font-size:10px;
+  font-weight:900;
   padding:5px 8px;
   border-radius:999px;
   background:#f3f4f6;
   color:#374151;
-  margin-bottom:9px;
+  margin-bottom:8px;
 }
 
 .product{
   font-weight:800;
-  line-height:1.25;
+  line-height:1.3;
+  font-size:15px;
 }
 
 .details{
-  font-size:13px;
+  font-size:12px;
   color:var(--muted);
   margin:7px 0 12px;
-  min-height:32px;
+  min-height:31px;
 }
 
 .price{
-  font-size:18px;
+  font-size:19px;
   font-weight:900;
 }
 
@@ -147,19 +166,20 @@ h2{
   border:0;
   border-radius:10px;
   background:var(--accent);
-  color:#fff;
-  padding:10px;
+  color:white;
+  padding:11px;
   font-weight:800;
   cursor:pointer;
 }
 
 /* BARRA INFERIOR */
+
 .bottom{
   position:fixed;
   left:0;
   right:0;
   bottom:0;
-  background:#fff;
+  background:white;
   border-top:1px solid var(--border);
   padding:10px 14px;
   z-index:20;
@@ -172,17 +192,6 @@ h2{
   gap:10px;
 }
 
-.checkout{
-  flex:1;
-  border:0;
-  background:var(--green);
-  color:#fff;
-  border-radius:12px;
-  padding:13px;
-  font-weight:900;
-  cursor:pointer;
-}
-
 .total{
   min-width:125px;
   background:#f3f4f6;
@@ -193,19 +202,31 @@ h2{
 .total small{
   display:block;
   color:var(--muted);
-  font-size:11px;
+  font-size:10px;
 }
 
 .total strong{
   font-size:17px;
 }
 
+.checkout{
+  flex:1;
+  border:0;
+  background:var(--green);
+  color:white;
+  border-radius:12px;
+  padding:13px;
+  font-weight:900;
+  cursor:pointer;
+}
+
 /* MODAL */
+
 .modal{
   display:none;
   position:fixed;
   inset:0;
-  background:#0008;
+  background:#0009;
   z-index:50;
   padding:18px;
   overflow:auto;
@@ -217,8 +238,8 @@ h2{
 
 .modalbox{
   max-width:620px;
-  margin:30px auto;
-  background:#fff;
+  margin:25px auto;
+  background:white;
   border-radius:18px;
   padding:20px;
 }
@@ -239,7 +260,6 @@ h2{
   gap:10px;
   padding:10px 0;
   border-bottom:1px solid var(--border);
-  font-size:14px;
 }
 
 .qty{
@@ -254,17 +274,11 @@ h2{
   width:28px;
   height:28px;
   font-weight:900;
-  cursor:pointer;
 }
 
 .qty span{
-  display:inline-block;
   width:28px;
   text-align:center;
-}
-
-form{
-  margin-top:18px;
 }
 
 label{
@@ -293,200 +307,258 @@ textarea{
   width:100%;
   margin-top:16px;
   background:var(--green);
-  color:#fff;
+  color:white;
   border:0;
   padding:14px;
   border-radius:12px;
   font-weight:900;
   font-size:16px;
-  cursor:pointer;
 }
 
 /* CELULAR */
+
 @media(max-width:699px){
 
-  header{
-    padding:12px 12px 14px;
+  .grid{
+    grid-template-columns:1fr 1fr;
+    gap:10px;
   }
 
-  .logo-img{
-    width:58px;
-    height:58px;
-    border-radius:14px;
+  .product-img{
+    height:150px;
   }
 
-  h1{
-    font-size:19px;
+  .card-content{
+    padding:11px;
   }
 
-  .subtitle{
+  .product{
+    font-size:14px;
+  }
+
+  .details{
     font-size:11px;
   }
 
+  .price{
+    font-size:17px;
+  }
+
+  .add{
+    font-size:12px;
+    padding:10px 5px;
+  }
+
+  h1{
+    font-size:18px;
+  }
+
+  .subtitle{
+    font-size:10px;
+  }
+}
+
+@media(max-width:380px){
+
+  .product-img{
+    height:135px;
+  }
+
+  .logo-img{
+    width:52px;
+    height:52px;
+  }
+
   .cartbtn{
-    padding:10px 12px;
-    font-size:13px;
+    padding:9px 11px;
   }
 
-  .grid{
-    grid-template-columns:1fr;
-  }
-
-  .card{
-    padding:15px;
-  }
-
-  .bottom-inner{
-    gap:8px;
-  }
-
-  .total{
-    min-width:115px;
-  }
-
-  .checkout{
-    font-size:14px;
-  }
 }
 
-/* COMPUTADOR */
 @media(min-width:700px){
+
   .grid{
-    grid-template-columns:repeat(3,minmax(0,1fr));
+    grid-template-columns:repeat(3,1fr);
   }
+
+  .product-img{
+    height:210px;
+  }
+
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-  <div class="header">
 
-    <div style="display:flex;align-items:center;gap:12px;min-width:0">
+<div class="header">
 
-      <img
-        class="logo-img"
-        src="./ChatGPT%20Image%2010%20de%20ago.%20de%202026%2C%2023_53_54.png"
-        alt="Depósito JR Oliveira"
-      >
+<div style="display:flex;align-items:center;gap:11px;min-width:0">
 
-      <div>
-        <h1>Depósito JR Oliveira</h1>
-        <div class="subtitle">
-          Saramandaia • Salvador/BA • Delivery
-        </div>
-      </div>
+<img
+class="logo-img"
+src="./ChatGPT%20Image%2010%20de%20ago.%20de%202026%2C%2023_53_54.png"
+alt="Depósito JR Oliveira"
+>
 
-    </div>
+<div>
 
-    <button class="cartbtn" onclick="openCart()">
-      🛒 <span id="cartCount">0</span>
-    </button>
+<h1>Depósito JR Oliveira</h1>
 
-  </div>
+<div class="subtitle">
+Saramandaia • Salvador/BA • Delivery
+</div>
+
+</div>
+
+</div>
+
+<button class="cartbtn" onclick="openCart()">
+🛒 <span id="cartCount">0</span>
+</button>
+
+</div>
+
 </header>
 
 <main>
 
-  <div class="notice">
-    🍺 Bebidas geladas disponíveis.
-    <strong>Taxa de entrega: consultar conforme o endereço.</strong>
-    <br>
-    Pedidos pelo WhatsApp após a confirmação do endereço e do valor da entrega.
-  </div>
+<div class="notice">
 
-  <h2>Produtos</h2>
+🍺 <strong>Bebidas geladas disponíveis!</strong>
 
-  <div class="grid" id="products"></div>
+<br>
+
+Taxa de entrega: consultar conforme o endereço.
+
+<br>
+
+Pedidos pelo WhatsApp após confirmação do endereço e valor da entrega.
+
+</div>
+
+<h2>🍻 Produtos</h2>
+
+<div class="grid" id="products"></div>
 
 </main>
 
 <div class="bottom">
 
-  <div class="bottom-inner">
+<div class="bottom-inner">
 
-    <div class="total">
-      <small>Total dos produtos</small>
-      <strong id="total">R$ 0,00</strong>
-    </div>
+<div class="total">
 
-    <button class="checkout" onclick="openCart()">
-      Finalizar pedido
-    </button>
+<small>Total dos produtos</small>
 
-  </div>
+<strong id="total">
+R$ 0,00
+</strong>
 
 </div>
 
-<!-- CARRINHO -->
+<button class="checkout" onclick="openCart()">
+Finalizar pedido
+</button>
+
+</div>
+
+</div>
 
 <div class="modal" id="modal">
 
-  <div class="modalbox">
+<div class="modalbox">
 
-    <button class="close" onclick="closeCart()">✕</button>
+<button class="close" onclick="closeCart()">
+✕
+</button>
 
-    <h2 style="margin-top:0">
-      Seu pedido
-    </h2>
+<h2 style="margin-top:0">
+🛒 Seu pedido
+</h2>
 
-    <div id="cartItems"></div>
+<div id="cartItems"></div>
 
-    <div style="display:flex;justify-content:space-between;margin-top:15px;font-size:18px">
-      <strong>Total</strong>
-      <strong id="modalTotal">R$ 0,00</strong>
-    </div>
+<div style="display:flex;justify-content:space-between;margin-top:15px;font-size:18px">
 
-    <form onsubmit="sendOrder(event)">
+<strong>Total</strong>
 
-      <label>Nome</label>
-      <input
-        id="name"
-        required
-        placeholder="Seu nome"
-      >
+<strong id="modalTotal">
+R$ 0,00
+</strong>
 
-      <label>Endereço de entrega</label>
-      <input
-        id="address"
-        required
-        placeholder="Rua, número, bairro"
-      >
+</div>
 
-      <label>Ponto de referência</label>
-      <input
-        id="reference"
-        placeholder="Ex.: próximo ao mercado"
-      >
+<form onsubmit="sendOrder(event)">
 
-      <label>Forma de pagamento</label>
+<label>Nome</label>
 
-      <select id="payment" required>
-        <option value="">Selecione</option>
-        <option>Pix</option>
-        <option>Dinheiro</option>
-        <option>Cartão na entrega</option>
-      </select>
+<input
+id="name"
+required
+placeholder="Seu nome"
+>
 
-      <label>Observação</label>
+<label>Endereço de entrega</label>
 
-      <textarea
-        id="note"
-        placeholder="Alguma observação sobre o pedido?"
-      ></textarea>
+<input
+id="address"
+required
+placeholder="Rua, número, bairro"
+>
 
-      <p style="font-size:12px;color:#6b7280">
-        A taxa de entrega será consultada conforme o endereço informado.
-      </p>
+<label>Ponto de referência</label>
 
-      <button class="send">
-        📲 Enviar pedido pelo WhatsApp
-      </button>
+<input
+id="reference"
+placeholder="Ex.: próximo ao mercado"
+>
 
-    </form>
+<label>Forma de pagamento</label>
 
-  </div>
+<select id="payment" required>
+
+<option value="">
+Selecione
+</option>
+
+<option>
+Pix
+</option>
+
+<option>
+Dinheiro
+</option>
+
+<option>
+Cartão na entrega
+</option>
+
+</select>
+
+<label>Observação</label>
+
+<textarea
+id="note"
+placeholder="Alguma observação?"
+></textarea>
+
+<p style="font-size:12px;color:#6b7280">
+
+A taxa de entrega será consultada conforme o endereço.
+
+</p>
+
+<button class="send">
+📲 Enviar pedido pelo WhatsApp
+</button>
+
+</form>
+
+</div>
 
 </div>
 
@@ -494,278 +566,347 @@ textarea{
 
 const products = [
 
-  ["Império Long Neck","Caixa com 12 unidades • Gelada",50],
+{
+name:"Império Long Neck",
+details:"Caixa com 12 unidades • Gelada",
+price:50,
+image:"https://www.mambo.com.br/cerveja-nacional-puro-malte-imperio-lager-long-neck-275ml/p"
+},
 
-  ["Império Verde Lata 350ml","Caixa com 12 unidades • Gelada",42],
+{
+name:"Império Verde Lata 350ml",
+details:"Caixa com 12 unidades • Gelada",
+price:42,
+image:"https://covabra.vtexassets.com/arquivos/ids/550520/101541.jpg?v=638925428296400000"
+},
 
-  ["Itaipava 269ml","Caixa com 12 unidades • Gelada",30],
+{
+name:"Itaipava 269ml",
+details:"Caixa com 12 unidades • Gelada",
+price:30,
+image:"https://www.atacadao.com.br/cerveja-itaipava-34944/p"
+},
 
-  ["Itaipava 350ml","Caixa com 12 unidades • Gelada",33],
+{
+name:"Itaipava 350ml",
+details:"Caixa com 12 unidades • Gelada",
+price:33,
+image:"https://www.labebidas.com.br/500-thickbox_default/itaipava-lata-350ml.webp"
+},
 
-  ["Skol 350ml","Caixa com 12 unidades • Gelada",40],
+{
+name:"Skol 350ml",
+details:"Caixa com 12 unidades • Gelada",
+price:40,
+image:"https://commons.wikimedia.org/wiki/Special:FilePath/Skol_table.JPG"
+},
 
-  ["Amstel 350ml","Caixa com 12 unidades • Gelada",42],
+{
+name:"Amstel 350ml",
+details:"Caixa com 12 unidades • Gelada",
+price:42,
+image:"https://commons.wikimedia.org/wiki/Special:FilePath/Dutch_beer_cans_Amstel_Grolsch_Heineken.jpg"
+},
 
-  ["Pepsi 1L","Caixa com 12 unidades • Natural",55],
+{
+name:"Pepsi 1L",
+details:"Caixa com 12 unidades • Natural",
+price:55,
+image:"https://mercado.carrefour.com.br/refrigerante-pepsi-garrafa-1l-8406596/p"
+},
 
-  ["Devassa 350ml","Caixa com 12 unidades • Gelada",36],
+{
+name:"Devassa 350ml",
+details:"Caixa com 12 unidades • Gelada",
+price:36,
+image:"https://commons.wikimedia.org/wiki/Special:FilePath/Devassa_Bem_Loura_(4643305671).jpg"
+},
 
-  ["Heineken Long Neck","Caixa com 6 unidades • Gelada",45],
+{
+name:"Heineken Long Neck",
+details:"Caixa com 6 unidades • Gelada",
+price:45,
+image:"https://commons.wikimedia.org/wiki/Special:FilePath/Heineken_Bottle.jpg"
+},
 
-  ["Budweiser Long Neck","Caixa com 6 unidades • Gelada",42]
+{
+name:"Budweiser Long Neck",
+details:"Caixa com 6 unidades • Gelada",
+price:42,
+image:"https://commons.wikimedia.org/wiki/Special:FilePath/Budweiser_Bottle.jpg"
+}
 
 ];
 
 let cart = {};
 
-/* FORMATA DINHEIRO */
-
 function money(value){
 
-  return value.toLocaleString(
-    'pt-BR',
-    {
-      style:'currency',
-      currency:'BRL'
-    }
-  );
+return value.toLocaleString(
+"pt-BR",
+{
+style:"currency",
+currency:"BRL"
+}
+);
 
 }
-
-/* MOSTRA PRODUTOS */
 
 function renderProducts(){
 
-  document.getElementById('products').innerHTML = products.map((p,i)=>`
+document.getElementById("products").innerHTML =
 
-    <div class="card">
+products.map((p,i)=>`
 
-      <span class="badge">
-        ${p[1].includes('Natural') ? 'NATURAL' : 'GELADA'}
-      </span>
+<div class="card">
 
-      <div class="product">
-        ${p[0]}
-      </div>
+<img
+class="product-img"
+src="${p.image}"
+alt="${p.name}"
+onerror="this.style.display='none'"
+>
 
-      <div class="details">
-        ${p[1]}
-      </div>
+<div class="card-content">
 
-      <div class="price">
-        ${money(p[2])}
-      </div>
+<span class="badge">
 
-      <button class="add" onclick="add(${i})">
-        Adicionar ao pedido
-      </button>
+${p.details.includes("Natural") ? "NATURAL" : "GELADA"}
 
-    </div>
+</span>
 
-  `).join('');
+<div class="product">
+${p.name}
+</div>
+
+<div class="details">
+${p.details}
+</div>
+
+<div class="price">
+${money(p.price)}
+</div>
+
+<button
+class="add"
+onclick="add(${i})"
+>
+Adicionar ao pedido
+</button>
+
+</div>
+
+</div>
+
+`).join("");
 
 }
-
-/* ADICIONAR */
 
 function add(i){
 
-  cart[i] = (cart[i] || 0) + 1;
+cart[i]=(cart[i]||0)+1;
 
-  update();
+update();
 
 }
-
-/* ALTERAR QUANTIDADE */
 
 function change(i,d){
 
-  cart[i] = (cart[i] || 0) + d;
+cart[i]=(cart[i]||0)+d;
 
-  if(cart[i] <= 0){
+if(cart[i]<=0){
 
-    delete cart[i];
-
-  }
-
-  update();
-  renderCart();
+delete cart[i];
 
 }
 
-/* ATUALIZAR TOTAL */
+update();
+
+renderCart();
+
+}
 
 function update(){
 
-  let count =
-    Object.values(cart)
-    .reduce((a,b)=>a+b,0);
+let count=
+Object.values(cart)
+.reduce((a,b)=>a+b,0);
 
-  let total =
-    Object.entries(cart)
-    .reduce(
-      (s,[i,q]) =>
-        s + products[i][2] * q,
-      0
-    );
+let total=
+Object.entries(cart)
+.reduce(
+(s,[i,q])=>s+products[i].price*q,
+0
+);
 
-  document.getElementById('cartCount').textContent = count;
+document.getElementById("cartCount")
+.textContent=count;
 
-  document.getElementById('total').textContent =
-    money(total);
+document.getElementById("total")
+.textContent=money(total);
 
-  document.getElementById('modalTotal').textContent =
-    money(total);
+document.getElementById("modalTotal")
+.textContent=money(total);
 
 }
-
-/* MOSTRAR CARRINHO */
 
 function renderCart(){
 
-  const el =
-    document.getElementById('cartItems');
+const el=
+document.getElementById("cartItems");
 
-  if(!Object.keys(cart).length){
+if(!Object.keys(cart).length){
 
-    el.innerHTML =
-      '<p style="color:#6b7280">Seu carrinho está vazio.</p>';
+el.innerHTML=
+'<p style="color:#6b7280">Seu carrinho está vazio.</p>';
 
-    return;
-
-  }
-
-  el.innerHTML =
-    Object.entries(cart).map(([i,q])=>`
-
-      <div class="row">
-
-        <div>
-          <strong>${products[i][0]}</strong>
-          <br>
-          <small>${money(products[i][2])} cada</small>
-        </div>
-
-        <div class="qty">
-
-          <button onclick="change(${i},-1)">
-            −
-          </button>
-
-          <span>${q}</span>
-
-          <button onclick="change(${i},1)">
-            +
-          </button>
-
-        </div>
-
-      </div>
-
-    `).join('');
+return;
 
 }
 
-/* ABRIR CARRINHO */
+el.innerHTML=
+
+Object.entries(cart)
+.map(([i,q])=>`
+
+<div class="row">
+
+<div>
+
+<strong>
+${products[i].name}
+</strong>
+
+<br>
+
+<small>
+${money(products[i].price)} cada
+</small>
+
+</div>
+
+<div class="qty">
+
+<button onclick="change(${i},-1)">
+−
+</button>
+
+<span>
+${q}
+</span>
+
+<button onclick="change(${i},1)">
++
+</button>
+
+</div>
+
+</div>
+
+`).join("");
+
+}
 
 function openCart(){
 
-  renderCart();
-  update();
+renderCart();
 
-  document
-    .getElementById('modal')
-    .classList.add('open');
+update();
+
+document
+.getElementById("modal")
+.classList.add("open");
 
 }
-
-/* FECHAR CARRINHO */
 
 function closeCart(){
 
-  document
-    .getElementById('modal')
-    .classList.remove('open');
+document
+.getElementById("modal")
+.classList.remove("open");
 
 }
-
-/* ENVIAR PEDIDO */
 
 function sendOrder(e){
 
-  e.preventDefault();
+e.preventDefault();
 
-  if(!Object.keys(cart).length){
+if(!Object.keys(cart).length){
 
-    alert('Adicione pelo menos um produto.');
+alert("Adicione pelo menos um produto.");
 
-    return;
-
-  }
-
-  const name =
-    document.getElementById('name').value.trim();
-
-  const address =
-    document.getElementById('address').value.trim();
-
-  const reference =
-    document.getElementById('reference').value.trim();
-
-  const payment =
-    document.getElementById('payment').value;
-
-  const note =
-    document.getElementById('note').value.trim();
-
-  let total = 0;
-
-  let lines = [];
-
-  Object.entries(cart).forEach(([i,q])=>{
-
-    const subtotal =
-      products[i][2] * q;
-
-    total += subtotal;
-
-    lines.push(
-      `${q}x ${products[i][0]} — ${money(subtotal)}`
-    );
-
-  });
-
-  const message =
-`*NOVO PEDIDO — DEPÓSITO JR OLIVEIRA*
-
-*Cliente:* ${name}
-*Endereço:* ${address}
-*Referência:* ${reference || 'Não informado'}
-
-*Itens:*
-${lines.join('\n')}
-
-*Total dos produtos:* ${money(total)}
-*Taxa de entrega:* consultar
-*Pagamento:* ${payment}
-*Observação:* ${note || 'Nenhuma'}`;
-
-  const whatsappNumber =
-    '5571987714174';
-
-  const url =
-    'https://wa.me/' +
-    whatsappNumber +
-    '?text=' +
-    encodeURIComponent(message);
-
-  window.open(url,'_blank');
+return;
 
 }
 
-/* INICIAR */
+const name=
+document.getElementById("name").value.trim();
+
+const address=
+document.getElementById("address").value.trim();
+
+const reference=
+document.getElementById("reference").value.trim();
+
+const payment=
+document.getElementById("payment").value;
+
+const note=
+document.getElementById("note").value.trim();
+
+let total=0;
+
+let lines=[];
+
+Object.entries(cart).forEach(([i,q])=>{
+
+let subtotal=
+products[i].price*q;
+
+total+=subtotal;
+
+lines.push(
+`${q}x ${products[i].name} — ${money(subtotal)}`
+);
+
+});
+
+const message=
+
+`*NOVO PEDIDO — DEPÓSITO JR OLIVEIRA*
+
+*Cliente:* ${name}
+
+*Endereço:* ${address}
+
+*Referência:* ${reference || "Não informado"}
+
+*Itens:*
+${lines.join("\n")}
+
+*Total dos produtos:* ${money(total)}
+
+*Taxa de entrega:* consultar
+
+*Pagamento:* ${payment}
+
+*Observação:* ${note || "Nenhuma"}`;
+
+const whatsapp=
+"5571987714174";
+
+const url=
+"https://wa.me/"
++whatsapp
++"?text="
++encodeURIComponent(message);
+
+window.open(url,"_blank");
+
+}
 
 renderProducts();
+
 update();
 
 </script>
